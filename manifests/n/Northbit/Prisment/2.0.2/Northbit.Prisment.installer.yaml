@@ -1,0 +1,40 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.6.0.schema.json
+
+PackageIdentifier: Northbit.Prisment
+PackageVersion: 2.0.2
+MinimumOSVersion: 10.0.17763.0
+InstallerType: nullsoft
+Scope: user
+InstallModes:
+- interactive
+- silent
+- silentWithProgress
+InstallerSwitches:
+  Upgrade: --updated
+UpgradeBehavior: install
+ReleaseDate: 2026-10-04
+FileExtensions:
+- md
+- mdx
+- html
+- htm
+- csv
+- tsv
+- json
+- yml
+- yaml
+- mmd
+- mermaid
+- docx
+- pdf
+- xlsx
+- xlsm
+Installers:
+- Architecture: x64
+  InstallerUrl: https://releases.prisment.io/v2.0.2/Prisment-2.0.2-win-x64.exe
+  InstallerSha256: F049B6F6FE8FCAD317D37A725E5F1E9E15B72B42B57494C688C8A1D3ACFB89FE
+- Architecture: arm64
+  InstallerUrl: https://releases.prisment.io/v2.0.2/Prisment-2.0.2-win-arm64.exe
+  InstallerSha256: 8E11ECFC1244972D0E574FDE02C6900F3B228835C83EC0EC9EAB7DE75E909FC4
+ManifestType: installer
+ManifestVersion: 1.6.0
